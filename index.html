@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="title" content="Lajas FM">
+    <meta name="description" content="Bienvenidos a Lajas FM, tu emisora favorita directo desde la turiloma.">
+    <meta name="keywords"
+        content="Emisora, FM, Lajas, Lajas FM, LajasFM.com, radio, online, Greenlink, Emisora online, variadas">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="Spanish">
+    <meta name="revisit-after" content="10 days">
+    <meta name="author" content="Greenlink Group">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>lajas FM</title>
+    <link rel="icon" href="https://res.cloudinary.com/dwx2okz1w/image/upload/v1589495716/icono_b6hwpz.png">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/jplayer-flat-audio-theme.css" />
+
+    <!-- Not required for theme. Use any font you want. -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' rel='stylesheet'
+        type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/page_style.css" />
+    <style>
+        footer {
+            bottom: 0;
+            cursor: default;
+            height: 6em;
+            left: 0;
+            line-height: 8em;
+            position: fixed;
+            text-align: center;
+            width: 100%;
+        }
+
+        html {
+            min-height: 100vh;
+        }
+
+        body {
+            background-image: url(https://res.cloudinary.com/dwx2okz1w/image/upload/v1589495717/background_nm7beo.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: #464646;
+            min-height: 100vh;
+            height: 100%;
+        }
+
+        h1,
+        h4 {
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        img {
+            border-radius: 5%;
+            -webkit-filter: drop-shadow(5px 5px 5px #222);
+            filter: drop-shadow(5px 5px 5px #222);
+            max-width: 100%;
+            height: auto;
+        }
+
+        #all {
+            width: 100%;
+            float: left;
+            text-align: center;
+        }
+    
+        .content-area {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 100%;
+            min-height: 100vh;
+        }
+
+        .content-wrapper {
+            min-height: 100vh;
+            height: 100%;
+        }  
+        
+        .player iframe {
+            border: none;
+            width: 95%;
+            height: 320px;
+            -moz-boder-radius: 5%;
+            -webkit-boder-radius: 5%;
+            border-radius: 5%;
+            overflow: hidden;
+            position: relative;            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <div class="content-area">
+            <div class="logo">
+                <img src="https://res.cloudinary.com/dwx2okz1w/image/upload/v1589495717/logo_er4d06.png" alt="Logo">
+            </div>
+
+            <div id="all" class="player">
+                <iframe id="frame"
+                    src="https://streams.radiomast.io/station/f2ba1fb2-71fa-4ceb-bf3b-fe5a2121b45a/player/widget?t=dark&s=2d5a5f2e-608b-4db3-ba38-c44bf15d928e"
+                    width="95%" height="100%" scrolling="no" frameBorder="0" allow="autoplay"></iframe>
+            </div>
+        </div>
+        <footer>
+            <h4 class="copyright">&copy;2021 Greenlink Group&reg;</h4>
+        </footer>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var frame = document.getElementById("frame"),
+        frameDoc = frame.contentDocument || frame.contentWindow.document;
+        frameDoc.documentElement.innerHTML = "";
+    })
+</script>
+
+</html>

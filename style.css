@@ -14,7 +14,8 @@ html {
 }
 
 body {
-    background-image: url(https://res.cloudinary.com/dwx2okz1w/image/upload/v1589495717/background_nm7beo.jpg);
+    /*background-image: url(https://res.cloudinary.com/dwx2okz1w/image/upload/v1589495717/background_nm7beo.jpg);*/
+    background-image: url("img/background.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;

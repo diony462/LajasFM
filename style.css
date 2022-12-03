@@ -61,13 +61,4 @@ img {
     height: 100%;
 }  
 
-.player iframe {
-    border: none;
-    width: 95%;
-    height: 320px;
-    -moz-boder-radius: 5%;
-    -webkit-boder-radius: 5%;
-    border-radius: 5%;
-    overflow: hidden;
-    position: relative;            
-}
+

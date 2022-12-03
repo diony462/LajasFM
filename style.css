@@ -1,0 +1,71 @@
+footer {
+    bottom: 0;
+    cursor: default;
+    height: 6em;
+    left: 0;
+    line-height: 8em;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    background-image: url(https://res.cloudinary.com/dwx2okz1w/image/upload/v1589495717/background_nm7beo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    min-height: 100vh;
+    height: 100%;
+}
+
+h1,
+h4 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+img {
+    border-radius: 5%;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    max-width: 100%;
+    height: auto;
+}
+
+#all {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.content-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    min-height: 100vh;
+    height: 100%;
+}  
+
+.player iframe {
+    border: none;
+    width: 95%;
+    height: 320px;
+    -moz-boder-radius: 5%;
+    -webkit-boder-radius: 5%;
+    border-radius: 5%;
+    overflow: hidden;
+    position: relative;            
+}

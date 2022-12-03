@@ -61,7 +61,7 @@ img {
     height: 100%;
 }  
 
-.player iframe {
+.player audio{
     border: none;
     width: 95%;
     height: 320px;

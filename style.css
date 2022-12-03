@@ -65,6 +65,8 @@ img {
     border: none;
     width: 95%;
     height: 320px;
+    justify-content: center;
+    align-items: center;
     -moz-boder-radius: 5%;
     -webkit-boder-radius: 5%;
     border-radius: 5%;

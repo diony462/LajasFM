@@ -64,6 +64,7 @@ img {
 .player audio{
     border: none;
     width: 70%;
+    height: 135px;
 
     justify-content: center;
     align-items: center;

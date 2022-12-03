@@ -1,0 +1,17 @@
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+<IfModule mod_rewrite.c>
+RewriteEngine on  
+RewriteBase /
+RewriteCond %{THE_REQUEST} (.*)\.php  
+RewriteRule ^(.*)\.php $1.html [R=301,L]  
+RewriteCond %{THE_REQUEST} (.*)\.html  
+RewriteRule ^(.*)\.html $1.php [L]
+RewriteCond %{HTTP_HOST} ^(.*).greenlink.com.do [NC]
+RewriteCond %{DOCUMENT_ROOT}/%1/ -d
+RewriteCond %1::%{REQUEST_URI} !^(.*?)::/1/?
+RewriteRule "^(.*)$" "%{DOCUMENT_ROOT}/%1/$1" [L]
+</IfModule>

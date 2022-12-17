@@ -65,10 +65,21 @@ img {
     height: 100%;
 }  
 
-.player audio{
-    border: none;
-    width: 80%;
-    justify-content: center;
-    align-items: center;
-         
+
+audio:hover, audio:focus, audio:active
+{
+
+-webkit-transform: scale(1.05);
+-moz-transform: scale(1.05);
+transform: scale(1.05);
+}
+
+
+audio
+{
+-webkit-transition:all 0.5s linear;
+-moz-transition:all 0.5s linear;
+-o-transition:all 0.5s linear;
+transition:all 0.5s linear;
+
 }

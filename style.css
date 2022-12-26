@@ -14,8 +14,6 @@ html {
 }
 
 body {
-    /*background-image: url(https://res.cloudinary.com/dwx2okz1w/image/upload/v1589495717/background_nm7beo.jpg);*/
-    /*background-image: url("img/background.jpg");*/
     background-color: #ffffff;
     background-image: url("img/cool-background.svg");
     background-position: center center;
@@ -50,7 +48,7 @@ img {
     text-align: center;
 }
 
-.content-area {
+.content-area .logo {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -58,7 +56,15 @@ img {
     flex-wrap: wrap;
     height: 100%;
     min-height: 100vh;
+
 }
+.content-area .player {
+    position: absolute;
+    top: 75%;
+    left: 75%;
+    transform: translate(-75%, -75%);
+}
+
 
 .content-wrapper {
     min-height: 100vh;
